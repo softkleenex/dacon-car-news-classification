@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+ml_env/
+
+# API Keys and Secrets
+config.py
+.env
+*.key
+api_key.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Test outputs
+*.log
+test_results/
+temp/
+tmp/
+
+# Data (optional - uncomment if data files are large)
+# data/*.csv
+# !data/samples.csv
+# !data/synthetic_data.csv
+
+# Results (keep only essential)
+results/*.json
+!results/.gitkeep
+
+# Documentation build
+docs/_build/
+*.pdf

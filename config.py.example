@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+OpenAI API 키 설정 파일 템플릿
+
+사용 방법:
+1. 이 파일을 config.py로 복사
+   cp config.py.example config.py
+   
+2. YOUR_API_KEY_HERE를 실제 OpenAI API 키로 교체
+   
+3. config.py는 .gitignore에 추가하여 실수로 커밋되지 않도록 주의
+"""
+
+# OpenAI API 키
+API_KEY = 'YOUR_API_KEY_HERE'
+
+# 모델 설정
+MODEL = 'gpt-4o-mini'
+TEMPERATURE = 0.4
+MAX_TOKENS = 10
+
+# 테스트 설정
+TEST_SAMPLE_SIZE = 20  # 빠른 테스트용 샘플 수
+FULL_TEST = False      # True로 설정 시 전체 46개 샘플 테스트
+
+# API 호출 간격 (초)
+API_DELAY = 0.02  # Rate limit 방지용 딜레이
