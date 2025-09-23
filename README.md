@@ -31,7 +31,7 @@
 ### 1. 환경 설정
 ```bash
 # 저장소 클론
-git clone https://github.com/yourusername/dacon-car-news-classification.git
+git clone https://github.com/softkleenex/dacon-car-news-classification.git
 cd dacon-car-news-classification
 
 # 의존성 설치
@@ -161,19 +161,14 @@ S = 0.9 × Accuracy + 0.1 × √(1-(bytes/3000)²)
 - [OpenAI API 문서](https://platform.openai.com/docs/)
 - [프롬프트 엔지니어링 가이드](https://www.promptingguide.ai/)
 
-## 🤝 기여 방법
-1. Fork this repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🤝 기여
+프로젝트 개선을 위한 Pull Request와 이슈 등록을 환영합니다!
 
 ## 📧 문의
-- Email: your.email@example.com
-- GitHub Issues: [프로젝트 이슈](https://github.com/yourusername/dacon-car-news-classification/issues)
+- GitHub Issues: [프로젝트 이슈](https://github.com/softkleenex/dacon-car-news-classification/issues)
 
 ## 📄 라이선스
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-**Note**: 이 프로젝트는 교육 목적으로 작성되었으며, 실제 대회 제출 시에는 대회 규정을 준수해야 합니다.
+**Note**: 이 프로젝트는 DACON 경진대회 참가 경험을 정리한 것입니다.
