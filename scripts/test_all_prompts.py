@@ -17,13 +17,7 @@ import time
 import json
 from openai import OpenAI
 
-try:
-    from config import API_KEY, MODEL, TEMPERATURE, MAX_TOKENS, API_DELAY
-except ImportError:
-    print("ERROR: config.py 파일을 찾을 수 없습니다.")
-    print("config.py.example을 config.py로 복사하고 API 키를 설정해주세요.")
-    print("cp config.py.example config.py")
-    sys.exit(1)
+from scripts.settings import API_DELAY, MAX_TOKENS, MODEL, TEMPERATURE, require_api_key
 
 # 테스트할 프롬프트 목록
 TEST_PROMPTS = [
@@ -133,7 +127,7 @@ def main():
     print("="*80)
     
     # API 클라이언트 초기화
-    client = OpenAI(api_key=API_KEY)
+    client = OpenAI(api_key=require_api_key())
     
     # 데이터 로드
     data_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'samples.csv')

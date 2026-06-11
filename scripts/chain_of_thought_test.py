@@ -14,11 +14,7 @@ import numpy as np
 import time
 from openai import OpenAI
 
-try:
-    from config import API_KEY, MODEL, TEMPERATURE, API_DELAY
-except ImportError:
-    print("ERROR: config.py 파일을 찾을 수 없습니다.")
-    sys.exit(1)
+from scripts.settings import API_DELAY, MODEL, TEMPERATURE, require_api_key
 
 # CoT 프롬프트 vs 일반 프롬프트
 COT_PROMPTS = [
@@ -135,7 +131,7 @@ def main():
     print("="*80)
     
     # API 클라이언트 초기화
-    client = OpenAI(api_key=API_KEY)
+    client = OpenAI(api_key=require_api_key())
     
     # 데이터 로드
     data_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'samples.csv')

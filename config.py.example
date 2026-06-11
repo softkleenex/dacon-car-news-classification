@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-OpenAI API 키 설정 파일 템플릿
+OpenAI API 설정 파일 템플릿
 
 사용 방법:
-1. 이 파일을 config.py로 복사
-   cp config.py.example config.py
-   
-2. YOUR_API_KEY_HERE를 실제 OpenAI API 키로 교체
-   
-3. config.py는 .gitignore에 추가하여 실수로 커밋되지 않도록 주의
+권장 방식은 환경변수입니다.
+
+   export OPENAI_API_KEY="your-openai-api-key"
+
+기존 방식이 필요하면 이 파일을 config.py로 복사해 사용하세요.
+config.py는 .gitignore에 포함되어 커밋되지 않습니다.
 """
 
 # OpenAI API 키

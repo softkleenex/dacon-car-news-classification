@@ -17,12 +17,7 @@ import numpy as np
 import time
 from openai import OpenAI
 
-try:
-    from config import API_KEY, MODEL, TEMPERATURE, MAX_TOKENS, API_DELAY
-except ImportError:
-    print("ERROR: config.py 파일을 찾을 수 없습니다.")
-    print("config.py.example을 config.py로 복사하고 API 키를 설정해주세요.")
-    sys.exit(1)
+from scripts.settings import API_DELAY, MAX_TOKENS, MODEL, TEMPERATURE, require_api_key
 
 def test_prompt_detailed(prompt, df, client):
     """
@@ -144,7 +139,7 @@ def main():
     print(f"프롬프트 길이: {len(prompt.encode('utf-8'))} bytes")
     
     # API 클라이언트 초기화
-    client = OpenAI(api_key=API_KEY)
+    client = OpenAI(api_key=require_api_key())
     
     # 데이터 로드
     data_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'samples.csv')
