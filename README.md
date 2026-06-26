@@ -116,3 +116,11 @@ python scripts/chain_of_thought_test.py
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+<!-- BLOG-URL:START -->
+
+## Blog
+
+- Blog note: [DACON 자동차 뉴스 분류 Prompt Engineering](https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification)
+
+<!-- BLOG-URL:END -->
