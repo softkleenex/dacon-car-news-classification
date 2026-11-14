@@ -121,6 +121,6 @@ MIT License. See [LICENSE](LICENSE).
 
 ## Blog
 
-- Blog note: [DACON 자동차 뉴스 분류 Prompt Engineering](https://softkleenex.github.io/coding_training/dacon/dacon-car-news-classification)
+- Blog note: [DACON 자동차 뉴스 분류 Prompt Engineering](https://softkleenex.github.io/posts/dacon-car-news-classification/)
 
 <!-- BLOG-URL:END -->
